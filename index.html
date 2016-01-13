@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>Personal Budget Tracker</h1>
+  <div id="container">
+    <div id="formEntry" class="row">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="inputTask">Transaction</label>
+          <input type="name" class="form-control" id="transEntry" placeholder="Enter Transaction" value="" required>
+        </div>
+        <div class="form-group">
+          <label for="inputDate">Date</label>
+          <input type="date" class="form-control" id="dateEntry" placeholder="Enter Date" value="">
+        </div>
+        <div class="form-group">
+          <label class="amount" for="inputAmount">Amount</label>
+          <div class="input-group">$</div>
+          <input type="text" class="form-control" id="amountEntry" placeholder="Enter Amount" value="" required>
+          <div class="input-group">.00</div>
+        </div>
+
+        <div class="btn-group">
+          <button id="catEntry" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></button>
+          <ul id="catDropDown" class="dropdown-menu">
+            <li class="dropList"><a href="#">Bill</a></li>
+            <li class="dropList"><a href="#">Income</a></li>
+            <li class="dropList"><a href="#">Entertainment</a></li>
+            <li class="dropList"><a href="#">Savings</a></li>
+          </ul>
+          <!-- <label for="inputCat">Category</label>
+          <input type="cat" class="form-control" id="catEntry" placeholder="Select Category" value=""> -->
+        </div>
+
+      </div>
+      <button id="newEntry" class="btn btn-success">Update Budget Sheet</button>
+     </form>
+    </div>
+  </div>
+
+  <div id="list" class="container">
+      <h2>January 2016</h2>
+      <div class="table-reponsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th id="titleTranse">Transaction</th>
+              <th id="titleDate">Date</th>
+              <th id="titleAmount">Amount</th>
+              <th id="titleBalance">Balance</th>
+              <th id="titleCat">Category</th>
+              <th id="titleRemove">Remove Item</th>
+            </tr>
+          </thead>
+
+          <tbody id="registry">
+
+            <tr id="template">
+              <td class="trans"></td>
+              <td class="date"></td>
+              <td class="amount"></td>
+              <td class="balance"></td>
+              <td class="cat"></td>
+              <td>
+                <button type="button" class="btn btn-default" id="trash">
+                  <span class="glyphicon glyphicon-trash"></span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>L.A. Fitness</td>
+              <td>2016-01-07</td>
+              <td class="testWith">-90.00</td>
+              <td>$4230.17</td>
+              <td>Bill</td>
+              <!-- <td><input type="checkbox" id="check"></td> -->
+              <td>
+                <button type="button" class="btn btn-default" id="trash">
+                  <span class="glyphicon glyphicon-trash"></span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Paycheck</td>
+              <td>2016-01-05</td>
+              <td class="testDep">+2875.00</td>
+              <td>$4320.17</td>
+              <td>Income</td>
+              <!-- <td><input type="checkbox" id="check"></td> -->
+              <td>
+                <button type="button" class="btn btn-default" id="trash">
+                  <span class="glyphicon glyphicon-trash"></span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Transfer to savings</td>
+              <td>2016-01-04</td>
+              <td class="testWith">-1000.00</td>
+              <td>$1445.17</td>
+              <td>Savings</td>
+              <!-- <td><input type="checkbox" id="check"></td> -->
+              <td>
+                <button type="button" class="btn btn-default" id="trash">
+                  <span class="glyphicon glyphicon-trash"></span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Dinner</td>
+              <td>2016-01-01</td>
+              <td class="testWith">-174.10</td>
+              <td>$445.17</td>
+              <td>Entertainment</td>
+              <!-- <td><input type="checkbox" id="check"></td> -->
+              <td>
+                <button type="button" class="btn btn-default" id="trash">
+                  <span class="glyphicon glyphicon-trash"></span>
+                </button>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  <script src="http://momentjs.com/downloads/moment.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

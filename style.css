@@ -1,0 +1,58 @@
+body{
+  background-color: #e5ffff;
+}
+h1 {
+  color: green;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  font-family: arial;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h2 {
+  color: green;
+  font-size: 20px;
+  margin-left: 50px;
+}
+#formEntry {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  font-size: 16px;
+}
+
+label{
+  font-size: 16px;
+  color: green;
+}
+
+#newEntry {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  color: #000;
+  font-size: 16px;
+}
+.checkbox {
+  margin-left: 30px;
+}
+.testDep {
+  color: green;
+  font-weight: bold;
+}
+.testWith {
+  color: red;
+  font-weight: bold;
+}
+#trash {
+  margin-left: 20px;
+}
+#template {
+     display:none;
+}
