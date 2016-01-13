@@ -13,7 +13,7 @@ h1 {
 
 h2 {
   color: green;
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 50px;
 }
 #formEntry {
@@ -55,4 +55,14 @@ label{
 }
 #template {
      display:none;
+}
+
+#buttonFilter {
+  margin-left: 700px;
+  margin-bottom: 20px;
+}
+
+#buttonSort {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
