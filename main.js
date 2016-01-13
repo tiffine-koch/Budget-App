@@ -72,7 +72,7 @@ function newTrans() {
     console.log(text);
   }
 
-// var currentBalance = 4230.17;
+var currentBalance = 4230.17;
 //
 // var entryObject = function(prop){
 //   this.trans = prop.trans;
@@ -80,4 +80,12 @@ function newTrans() {
 //   this.amount = prop.amount;
 //   this.balance = prop.balance;
 //   this.cat = prop.cat;
+// }
+// function catFilter() {
+//   $('catDropDown').on('change', function(){
+//     $('tbody').find('td').attr('selected', true);
+//     if$(this).val() !== 'none' {
+//       $('#catDropDown').val('');
+//     }
+//   }
 // }
