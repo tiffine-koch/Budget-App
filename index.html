@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <h1>Personal Budget Tracker</h1>
+  <h1>Personal Budget Tracker</h1>
   <div id="container">
     <div id="formEntry" class="row">
       <form class="form-inline">
@@ -23,7 +23,7 @@
         <div class="form-group">
           <label class="amount" for="inputAmount">Amount</label>
           <div class="input-group">$</div>
-          <input type="text" class="form-control" id="amountEntry" placeholder="Enter Amount" value="" required>
+          <input type="number" class="form-control" id="amountEntry" placeholder="Enter Amount" value="" step=0.01 required>
         </div>
 
         <div class="btn-group">
@@ -31,7 +31,7 @@
           <ul id="catDropDown" class="dropdown-menu">
             <li class="dropList" selected="selected" value="Bill"><a href="#">Bill</a></li>
             <li class="dropList" selected="selected" value="Income"><a href="#">Income</a></li>
-            <li class="dropList" selected="selected" value"EntertainmenSavinghref="#">Entertainment</a></li>
+            <li class="dropList" selected="selected" value"Entertainment"><a href="#">Entertainment</a></li>
             <li class="dropList" selected="selected" value="Savings"><a href="#">Savings</a></li>
         </ul>
       </div>
@@ -93,11 +93,10 @@
 
             <tr>
               <td>L.A. Fitness</td>
-              <td>2016-01-07</td>
+              <td>Sat,Jan 6, 2016 11:00 PM</td>
               <td class="testWith">-90.00</td>
-              <td>$4230.17</td>
+              <td class="balance">$4230.17</td>
               <td>Bill</td>
-              <!-- <td><input type="checkbox" id="check"></td> -->
               <td>
                 <button type="button" class="btn btn-default" id="trash">
                   <span class="glyphicon glyphicon-trash"></span>
@@ -107,11 +106,10 @@
 
             <tr>
               <td>Paycheck</td>
-              <td>2016-01-05</td>
+              <td>Fri,Jan 5, 2016 12:01 AM</td>
               <td class="testDep">+2875.00</td>
               <td>$4320.17</td>
               <td>Income</td>
-              <!-- <td><input type="checkbox" id="check"></td> -->
               <td>
                 <button type="button" class="btn btn-default" id="trash">
                   <span class="glyphicon glyphicon-trash"></span>
@@ -121,11 +119,10 @@
 
             <tr>
               <td>Transfer to savings</td>
-              <td>2016-01-04</td>
+              <td>Thur,Jan 4, 2016 09:00 PM</td>
               <td class="testWith">-1000.00</td>
               <td>$1445.17</td>
               <td>Savings</td>
-              <!-- <td><input type="checkbox" id="check"></td> -->
               <td>
                 <button type="button" class="btn btn-default" id="trash">
                   <span class="glyphicon glyphicon-trash"></span>
@@ -139,7 +136,6 @@
               <td class="testWith">-174.10</td>
               <td>$445.17</td>
               <td>Entertainment</td>
-              <!-- <td><input type="checkbox" id="check"></td> -->
               <td>
                 <button type="button" class="btn btn-default" id="trash">
                   <span class="glyphicon glyphicon-trash"></span>
