@@ -24,39 +24,36 @@
           <label class="amount" for="inputAmount">Amount</label>
           <div class="input-group">$</div>
           <input type="text" class="form-control" id="amountEntry" placeholder="Enter Amount" value="" required>
-          <div class="input-group">.00</div>
         </div>
 
         <div class="btn-group">
           <button id="catEntry" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add Category<span class="caret"></span></button>
           <ul id="catDropDown" class="dropdown-menu">
-            <li class="dropList"><a href="#">Bill</a></li>
-            <li class="dropList"><a href="#">Income</a></li>
-            <li class="dropList"><a href="#">Entertainment</a></li>
-            <li class="dropList"><a href="#">Savings</a></li>
-          </ul>
-          <!-- <label for="inputCat">Category</label>
-          <input type="cat" class="form-control" id="catEntry" placeholder="Select Category" value=""> -->
-        </div>
-
+            <li class="dropList" selected="selected" value="Bill"><a href="#">Bill</a></li>
+            <li class="dropList" selected="selected" value="Income"><a href="#">Income</a></li>
+            <li class="dropList" selected="selected" value"EntertainmenSavinghref="#">Entertainment</a></li>
+            <li class="dropList" selected="selected" value="Savings"><a href="#">Savings</a></li>
+        </ul>
       </div>
-      <button id="newEntry" class="btn btn-success">Update Budget Sheet</button>
+      </div>
+      <button id="newEntry" class="btn btn-success">Add New Entry</button>
      </form>
     </div>
   </div>
 
   <div id="list" class="container">
-      <h2>January 2016</h2>
+    <h2>January 2016</h2>
 
-      <div id="buttonFilter" class="btn-group">
-        <button id="catFilter" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By Category<span class="caret"></span></button>
+      <div class="btn-group">
+        <button id="buttonFilter" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By Category<span class="caret"></span></button>
         <ul id="catDropDown" class="dropdown-menu">
-          <li class="dropList"><a href="#">Bill</a></li>
-          <li class="dropList"><a href="#">Income</a></li>
-          <li class="dropList"><a href="#">Entertainment</a></li>
-          <li class="dropList"><a href="#">Savings</a></li>
-        </ul>
+          <li class="dropList" selected="selected" value="Bill"><a href="#">Bill</a></li>
+          <li class="dropList" selected="selected" value="Income"><a href="#">Income</a></li>
+          <li class="dropList" selected="selected" value"Entertainment"><a href="#">Entertainment</a></li>
+          <li class="dropList" selected="selected" value="Savings"><a href="#">Savings</a></li>
+         </ul>
       </div>
+
 
       <div id="buttonSort" class="btn-group">
         <button id="sortButton" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort History<span class="caret"></span></button>
